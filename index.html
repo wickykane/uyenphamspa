@@ -20,6 +20,7 @@
 
     <!-- CSS
     ================================================== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
@@ -56,7 +57,7 @@
             <div class="header-nav__content">
                 <h3>Menu</h3>
 
-                <ul class="header-nav__list">
+                <ul class="header-nav__list menu-text font-3d">
                     <li class="current"><a class="smoothscroll" href="#home" title="home">Trang chủ</a></li>
                     <li><a class="smoothscroll" href="#about" title="about">Thông tin</a></li>
                     <li><a class="smoothscroll" href="#services" title="services">Dịch vụ</a></li>
@@ -77,18 +78,37 @@
 
     </header>
     <!-- end s-header -->
-  
+
     <!-- home
     ================================================== -->
     <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=100% data-position-y=center>
-
-        <div>
-            <div id="container">
-                <video id="background_video" loop muted></video>
-                <div id="video_cover"></div>
-                <div class="video-overlay"></div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div id="slide_one" class="swiper-slide">
+                    <div>
+                        <div id="container">
+                            <video id="background_video" loop muted></video>
+                            <div id="video_cover"></div>
+                            <div class="video-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="slide_one" class="swiper-slide">
+                    <div>
+                        <div id="container">
+                            <video id="background_video" loop muted></video>
+                            <div id="video_cover"></div>
+                            <div class="video-overlay"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-hor"></div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.2.5/js/swiper.min.js"></script>
         <script src="bideo.js"></script>
         <script src="main.js"></script>
 
@@ -100,13 +120,12 @@
             <div class="row home-content__main">
 
 
-                <h1 class="text-center font-3d">
-                   Uyên Phạm
-                   <br>
-                    Spa & Beauty
+                <h1 class="font-3d font-3d-title ">
+                    Uyên Phạm
+                    <br> Spa & Beauty
                 </h1>
                 <h3>Sẽ là điểm đến lý tưởng, là nơi cung cấp dịch vụ thẩm mỹ và các khóa đào tạo chất lượng cao. </h3>
-                
+
                 <div class="home-content__buttons">
                     <a href="#contact" class="smoothscroll btn btn--stroke">
                         Dịch vụ

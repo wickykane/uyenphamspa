@@ -29,14 +29,83 @@
       left: 50%;
       transform: translate(-50%, 0);
     }
+
     .video-overlay {
       background: url(http://s14.directupload.net/images/111129/44ga9qid.png);
       width: 100%;
       height: 100%;
       position: absolute;
     }
+
     .font-3d {
-      font: bold 52px Helvetica, Arial, Sans-Serif;
       text-shadow: 1px 1px #39b54a, 2px 2px #39b54a, 2px 2px #39b54a;
       text-transform: uppercase;
+    }
+
+    .font-3d-title {
+      font: bold 52px Helvetica, Arial, Sans-Serif;
+      width: 50%;
+      min-width: 150px;
+      padding: 20px;
+      border: 2px #39b54a dashed;
+    }
+
+    .menu-text {
+      font-family: "montserrat-semibold", sans-serif;
+      line-height: 1.5;
+      text-transform: uppercase;
+      letter-spacing: .25rem;
+      margin-bottom: 4.8rem;
+      margin-top: .9rem;
+    }
+
+    .text-uppercase {
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+
+
+    .swiper-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .swiper-pagination-hor {
+      display: block;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 5%;
+    }
+
+    .swiper-pagination-hor .swiper-pagination-bullet {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #fff;
+    }
+
+    .swiper-slide {
+      text-align: center;
+
+      background: #fff;
+      /* Center slide text vertically */
+      
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
     }
